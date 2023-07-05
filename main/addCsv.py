@@ -44,7 +44,7 @@ def regist_data(cursor,file_path):
                 add_data.append(row[0])     # 対象日時(対象レコードがDBに存在するかの確認用)
                 logger.debug('add_data='+str(add_data))
 
-                # addd the record
+                # add the record
                 cursor.execute(sql_insert,add_data)
 
             logger.info("=== End DB登録 < ===")
