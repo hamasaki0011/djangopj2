@@ -6,7 +6,7 @@ from .forms import LocationForm,SensorsForm
 from accounts.models import User
 # ページへのアクセスをログインユーザーのみに制限する
 from django.contrib.auth.mixins import LoginRequiredMixin,UserPassesTestMixin
-from django.contrib.auth import get_user, get_user_model
+# 23.7.5 imported but unused from django.contrib.auth import get_user, get_user_model
 from django.contrib import messages
 from django.utils import timezone
 import datetime
@@ -19,7 +19,7 @@ from .forms import FileUploadForm
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 # ajax trial
-from django.conf import settings
+# 23.7.5 imported but unused from django.conf import settings
 from django.http import JsonResponse
 
 # import dateutil

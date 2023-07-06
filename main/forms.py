@@ -2,7 +2,7 @@ from django import forms
 from .models import Location,Sensors,Result
 import os
 # import io, csv
-from django.core.exceptions import ValidationError
+# 23.7.5 imported but unused from django.core.exceptions import ValidationError
 
 VALID_EXTENSIONS=['.csv']
 
